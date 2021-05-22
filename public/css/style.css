@@ -39,12 +39,14 @@ pre{
 	color: #343a40;
 }
 
+.active {
+	background-color: #6610f2;
+}
+
 .topMenu li a:hover:not(.active){
 	color: #e83e8c;
 }
 
-.active {
-	background-color: #6610f2;
-}
+
 
 
