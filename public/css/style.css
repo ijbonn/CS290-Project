@@ -22,13 +22,6 @@ pre{
   	line-height: 1.75;
 }
 
-.topMenu #siteName{
-	color: #fff;
-	background-color: #007bff;
-	font-size: 18px;
-	font-style: oblique;
-}
-
 .topMenu li{
 	float: left;
 }
@@ -47,4 +40,11 @@ pre{
 
 .active {
 	color: #007bff;
+}
+
+.topMenu #siteName{
+	color: #fff;
+	background-color: #007bff;
+	font-size: 18px;
+	font-style: oblique;
 }
