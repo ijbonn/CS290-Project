@@ -24,9 +24,6 @@ pre{
 
 .topMenu li{
 	float: left;
-}
-
-.topMenu li a{
 	display: block;
   	color: #0d2a40;
   	text-align: center;
@@ -40,6 +37,7 @@ pre{
 
 .active {
 	color: #007bff;
+	background-color: #6610f2;
 }
 
 .topMenu #siteName{
