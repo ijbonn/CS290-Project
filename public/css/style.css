@@ -1,5 +1,6 @@
  body{
  	font-family: "Neue Helvetica", Arial, Roboto, sans-serif;
+ 	max-width: 600rem;
 }
 
 pre{
