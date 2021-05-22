@@ -43,8 +43,6 @@ pre{
 }
 
 .topMenu #siteName{
-	color: #fff;
-	background-color: #007bff;
-	font-size: 18px;
-	font-style: oblique;
+	color: #6610f2;
+	font-weight: 600;
 }
