@@ -1,6 +1,7 @@
 var express = require('express');
 var session = require('express-session');
 var request = require('request');
+var flickity = require('flickity');
 
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
