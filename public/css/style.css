@@ -28,6 +28,14 @@ pre{
   	color: #0d2a40;
   	text-align: center;
   	padding: 14px 16px;
+}
+
+.topMenu #siteName{
+	color: #6610f2;
+	font-weight: 600;
+}
+
+.topMenu li a{
   	text-decoration: none;
 }
 
@@ -36,11 +44,7 @@ pre{
 }
 
 .active {
-	color: #007bff;
-	background-color: #6610f2;
+	color: #6610f2;
 }
 
-.topMenu #siteName{
-	color: #6610f2;
-	font-weight: 600;
-}
+
