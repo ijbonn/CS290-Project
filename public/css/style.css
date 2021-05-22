@@ -22,24 +22,25 @@ pre{
   	line-height: 1.75;
 }
 
-.topMenu li{
+.topMenu #siteName{
+	color: #6610f2;
+	font-size: 18px;
 	float: left;
 	display: block;
   	text-align: center;
   	padding: 14px 16px;
 }
 
-.topMenu #siteName{
-	color: #6610f2;
-	font-size: 18px;
-}
-
 .topMenu li a{
   	text-decoration: none;
 	color: #343a40;
+	float: left;
+	display: block;
+  	text-align: center;
+  	padding: 14px 16px;
 }
 
-.active {
+.topMenu li a(.active) {
 	color: #6610f2;
 }
 
