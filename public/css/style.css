@@ -1,3 +1,7 @@
+ body{
+ 	font-family: "Neue Helvetica", Arial, Roboto, sans-serif;
+}
+
 pre{
 	background-color: #d9d9d9;
 	border-radius: 10px;
@@ -19,16 +23,16 @@ pre{
 
 .topMenu li a{
 	display: block;
-  	color: white;
+  	color: #0d2a40;
   	text-align: center;
   	padding: 14px 16px;
   	text-decoration: none;
 }
 
 .topMenu li a:hover:not(.active){
-	background-color: #111;
+	color: #e83e8c;
 }
 
 .active {
-	background-color: #4CAF50;
+	background-color: #6610f2;
 }
