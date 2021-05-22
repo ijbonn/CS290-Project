@@ -24,7 +24,6 @@ pre{
 
 .topMenu #siteName{
 	color: #6610f2;
-	font-size: 18px;
 	float: left;
 	display: block;
   	text-align: center;
@@ -40,11 +39,7 @@ pre{
   	padding: 14px 16px;
 }
 
-.topMenu li a(.active) {
-	color: #6610f2;
-}
-
-.topMenu li a:hover:not(.active){
+.topMenu li a:hover{
 	color: #e83e8c;
 }
 
