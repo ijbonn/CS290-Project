@@ -25,14 +25,14 @@ pre{
 .topMenu li{
 	float: left;
 	display: block;
-  	color: #0d2a40;
+  	color: #343a40;
   	text-align: center;
   	padding: 14px 16px;
 }
 
 .topMenu #siteName{
 	color: #6610f2;
-	font-weight: 600;
+	font-size: 18px;
 }
 
 .topMenu li a{
