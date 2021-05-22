@@ -22,6 +22,21 @@ app.get('/',function(req,res){
   res.render('home', context);
 });
 
+app.get('/create-field',function(req,res){
+  var context = {};
+  res.render('create-field', context);
+});
+
+app.get('/browse-fields',function(req,res){
+  var context = {};
+  res.render('browse-fields', context);
+});
+
+app.get('/about',function(req,res){
+  var context = {};
+  res.render('about', context);
+});
+
 app.use(function(req,res){
   res.status(404);
   res.render('404');
