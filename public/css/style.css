@@ -40,7 +40,7 @@ pre{
 }
 
 .active {
-	background-color: #6610f2;
+	color: #6610f2;
 }
 
 .topMenu li a:hover:not(.active){
