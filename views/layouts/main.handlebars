@@ -3,7 +3,7 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>CS290 Project</title>
+  <title>CS290 Project - Field Manager Demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
  </head>
@@ -14,6 +14,11 @@
 	  <li><a href="create-field">Create Field</a></li>
 	  <li><a href="browse-fields">Browse Fields</a></li>
 	  <li><a href="about">About</a></li>
+	  <li id='logOutPane'>
+	  	<form method="post">
+	  		<label for="logOut">{{name}}</label>
+	  		<input id= "logOut" type="submit" name="End Session" value="End Session" visible='true'>
+	  	</form></li>
 	</ul>
 
 	{{{body}}}

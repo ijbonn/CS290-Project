@@ -1,6 +1,8 @@
  body{
  	font-family: "Neue Helvetica", Arial, Roboto, sans-serif;
  	max-width: 70rem;
+ 	margin: 0 auto;
+  	padding: 0 1.25rem;
 }
 
 pre{
@@ -24,11 +26,18 @@ pre{
 }
 
 .topMenu #siteName{
-	color: #6610f2;
+	color: #007bff;
 	float: left;
 	display: block;
   	text-align: center;
   	padding: 14px 16px;
+}
+
+.topMenu #logOutPane{
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
 }
 
 .topMenu li a{
@@ -41,5 +50,56 @@ pre{
 }
 
 .topMenu li a:hover{
+	color: #e83e8c;
+}
+
+input[type=submit]{
+	color: white;
+	background-color: #007bff;
+	border: none;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+
+input[type=text], input[type=number], input[type=date], select{
+	border-radius: 10px;
+	border: 1px solid #6c757d;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, select:focus{
+	border: 1px solid #e83e8c;
+	outline: none;
+}
+
+.scrollBox {
+	width: 70rem;
+	height: 20rem;
+	padding: 5px;
+	overflow-y: scroll;
+}
+
+.scrollBox::-webkit-scrollbar {
+  width: 3px;
+}
+ 
+.scrollBox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+ 
+.scrollBox::-webkit-scrollbar-thumb {
+  background-color: #e83e8c;
+}
+
+.formalList{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+.formalList li:before{
+	content: "// ";
 	color: #e83e8c;
 }

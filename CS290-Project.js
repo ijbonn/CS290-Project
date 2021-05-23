@@ -16,24 +16,82 @@ app.use(express.static('public'));
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 4494);
-        
-app.get('/',function(req,res){
+
+
+// Start home page or ask for new session if none is active        
+app.get('/',function(req,res,next){
   var context = {};
+  if(!req.session.name){
+    res.render('newSession', context);
+    return;
+  }
+  context.name = req.session.name;
+  context.fieldCount = req.session.fieldInfo.length || 0;
+  context.fieldInfo = req.session.fieldInfo || [];
   res.render('home', context);
+});
+
+app.post('/',function(req,res){
+  var context = {};
+
+  if(req.body['New User']){
+    req.session.name = req.body.name;
+    req.session.fieldInfo = [];
+    req.session.fieldId = 0;
+  }
+
+  if(!req.session.name){
+    res.render('newSession', context);
+    return;
+  }
+
+  if(req.body['Add Field']){
+    req.session.fieldInfo.push({"name":req.body.name, "id":req.session.fildId});
+    req.session.fieldId++;
+  }
+
+  if(req.body['Delete Field']){
+    req.session.fieldInfo.filter(function(e){
+      return e.id != req.body.id;
+    })
+  }
+
+  if(req.body['End Session']){
+    req.session.destroy();
+    res.render('newSession',context);
+    return;
+  }
+
+  context.name = req.session.name;
+  context.fielCount = req.session.fieldInfo.length;
+  context.fieldInfo = req.session.fieldInfo;
+  res.render('home',context);
 });
 
 app.get('/create-field',function(req,res){
   var context = {};
+  if(!req.session.name){
+    res.render('newSession', context);
+    return;
+  }
   res.render('create-field', context);
 });
 
 app.get('/browse-fields',function(req,res){
   var context = {};
+  if(!req.session.name){
+    res.render('newSession', context);
+    return;
+  }
   res.render('browse-fields', context);
 });
 
 app.get('/about',function(req,res){
   var context = {};
+  if(!req.session.name){
+    res.render('newSession', context);
+    return;
+  }
   res.render('about', context);
 });
 
