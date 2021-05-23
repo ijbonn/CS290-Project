@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "fName": "Hambys",
+    "fState": "ID",
+    "fCity": "Parma",
+    "fCrop": "Peas",
+    "fAcres": 14,
+    "fPDate": "2021-03-19",
+    "cDate": "2021-05-23",
+    "cUser": "Emily"
+  },
+  {
+    "id": 1,
+    "fName": "Hambys",
+    "fState": "ID",
+    "fCity": "Parma",
+    "fCrop": "Garden Beans",
+    "fAcres": 8,
+    "fPDate": "2021-05-15",
+    "cDate": "2021-05-23",
+    "cUser": "Ian"
+  },
+  {
+    "id": 2,
+    "fName": "Angels",
+    "fState": "ID",
+    "fCity": "Payette",
+    "fCrop": "Dry Beans",
+    "fAcres": 2,
+    "fPDate": "2021-05-15",
+    "cDate": "2021-05-23",
+    "cUser": "Ian"
+  }
+]

@@ -53,6 +53,12 @@ pre{
 	color: #e83e8c;
 }
 
+.editField {
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+}
+
 input[type=submit]{
 	color: white;
 	background-color: #007bff;
@@ -66,6 +72,7 @@ input[type=text], input[type=number], input[type=date], select{
 	border: 1px solid #6c757d;
 	padding: 5px;
 	margin-bottom: 5px;
+	width: 15rem;
 }
 
 input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, select:focus{
@@ -95,7 +102,7 @@ input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, select
 .formalList{
 	list-style-type: none;
 	margin-left: 0;
-	padding-left: 1em;
+	padding-left: 3em;
 	text-indent: -1em;
 }
 
@@ -103,3 +110,25 @@ input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, select
 	content: "// ";
 	color: #e83e8c;
 }
+
+.indentForm{
+	padding-left: 1em;
+}
+
+.fieldDetails {
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+
+.fieldDetails fieldset {
+	border-top: 1px solid #e83e8c;
+	border-bottom: 1px solid #e83e8c;
+
+}
+
+.fieldDetails fieldset legend{
+	padding: 5px 10px;
+	font-size: 1.2em;
+}
+

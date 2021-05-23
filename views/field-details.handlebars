@@ -1,0 +1,20 @@
+<h1>Field Details</h1>
+
+<div class="fieldDetails">
+	<h3>{{fieldInfo.fName}}</h3>
+		<fieldset>
+			<legend>Field Attributes</legend>
+			<ul class="formalList">
+				<li>{{fieldInfo.fCity}} ,{{fieldInfo.fState}}</li>
+				<li>{{fieldInfo.fAcres}} acres of {{fieldInfo.fCrop}} planted on {{fieldInfo.fPDate}}</li>
+				<li>Record created on {{fieldInfo.cDate}} by {{fieldInfo.cUser}}</li>
+			</ul> 
+			<form method="post" class="editField">
+				<input type="hidden" name="id" value="{{fieldInfo.id}}">
+				<input type="submit" name="editFieldAtt" value="Edit">
+			</form>
+		</fieldset>
+	
+
+</div>
+

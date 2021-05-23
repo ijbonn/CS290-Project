@@ -1,1 +1,17 @@
 <h1>Existing Fields</h1>
+
+{{#if fieldInfo}}
+<ul class="formalList">
+	{{#each fieldInfo}}
+	<h3>{{this.fName}}</h3>
+	<li>{{this.fCity}} ,{{this.fState}}</li>
+	<li>{{this.fAcres}} acres of {{this.fCrop}} planted on {{this.fPDate}}</li>
+	<li>Record created on {{this.cDate}} by {{this.cUser}}</li>
+	<form method="post" class="indentForm">
+		<input type="hidden" name="id" value="{{this.id}}">
+		<input type="submit" name="Details" value="Details">
+	</form>
+	<br>
+	{{/each}}
+</ul>
+{{/if}}

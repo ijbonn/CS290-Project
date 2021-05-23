@@ -1,9 +1,10 @@
 <h1>Create a New Field</h1>
-<form method="post">
+
+<form method="post" class="indentForm">
 	<h2>Location Details</h2>
 	<ul class="formalList">
-		<li><input type='text' id='fieldName' placeholder="Field Name"></li>
-		<li><select id='fieldState'>
+		<li><input type='text' name='fieldName' placeholder="Field Name" required></li>
+		<li><select name='fieldState' required>
 			<option value="" disabled selected hidden>State</option>
 			<option value="AL">Alabama</option>
 			<option value="AK">Alaska</option>
@@ -57,12 +58,12 @@
 			<option value="WI">Wisconsin</option>
 			<option value="WY">Wyoming</option>
 		</select></li>
-		<li><input type='text' id='fieldCity' placeholder="City"></li>
+		<li><input type='text' name='fieldCity' placeholder="City" required></li>
 	</ul>
 
 	<h2>Planting Details</h2>
 	<ul class="formalList">
-		<li><select id='fieldCrop'>
+		<li><select name='fieldCrop' required>
 			<option value="" disabled selected hidden>Crop</option>
 			<option value="Garden Beans">Garden Beans</option>
 			<option value="Dry Beans">Dry Beans</option>
@@ -71,8 +72,8 @@
 			<option value="Onions">Onions</option>
 			<option value="Carrots">Carrots</option>
 		</select></li>
-		<li><input type='number' id='fieldAcres' placeholder="Acres"></li>
-		<li><input type='date' id='fieldPlantingDate' placeholder="Planting Date"></li>
+		<li><input type='number' name='fieldAcres' placeholder="Acres" required></li>
+		<li><input type='date' name='fieldPlantingDate' placeholder="Planting Date" required></li>
 	</ul>
 
 	<input type="submit" name="Add Field" value="Complete">
