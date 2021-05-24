@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
-app.set('port', 4494);
+app.set('port', 4495);
 
 
 // Start home page or ask for new session if none is active        
