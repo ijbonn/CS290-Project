@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "fName": "Hambys",
+    "fName": "Hambys-Peas",
     "fState": "ID",
     "fCity": "Parma",
     "fCrop": "Peas",
@@ -12,7 +12,7 @@
   },
   {
     "id": 1,
-    "fName": "Hambys",
+    "fName": "Hambys-Beans",
     "fState": "ID",
     "fCity": "Parma",
     "fCrop": "Garden Beans",

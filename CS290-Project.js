@@ -1,6 +1,7 @@
 var express = require('express');
 var session = require('express-session');
 var request = require('request');
+var fs = require('fs');
 
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
@@ -86,8 +87,6 @@ app.post('/create-field',function(req,res){
     req.session.fieldInfo.push({"id":req.session.fieldId, "fName":req.body.fieldName, "fState":req.body.fieldState, 
       "fCity":req.body.fieldCity, "fCrop":req.body.fieldCrop, "fAcres":req.body.fieldAcres, "fPDate":req.body.fieldPlantingDate,
       "cUser":req.session.userName, "cDate":currentDate});
-    //const newField = req.session.fieldInfo.filter(field => field.id == req.session.fieldId);
-    //console.log(newField);
     var newField = fetchField(req.session.fieldInfo,req.session.fieldId)
     req.session.fieldId++;
     context.fieldInfo = newField;
@@ -114,14 +113,24 @@ app.post('/browse-fields',function(req,res){
   var context = {};
   
   if(req.body['Details']){
-    //const targetField = req.session.fieldInfo.filter(field => field.id == req.body.id);
     var targetField = fetchField(req.session.fieldInfo,req.body.id)
-    //context.fieldInfo = targetField;
     context.fieldInfo = targetField;
     context.userName = req.session.userName;
     res.render('field-details', context);
     return;    
   }
+
+  if(req.body['exportFields']){
+    exportString = JSON.stringify(req.session.fieldInfo);
+    console.log(exportString);
+    fs.writeFile("test.txt",exportString,{flag: 'r+'},function(err){
+      if(err){
+        console.log("error in file export");
+      }
+    });
+    return;
+  }
+
   context.fieldInfo = req.session.fieldInfo;
   context.userName = req.session.userName;
   res.render('browse-field',context);

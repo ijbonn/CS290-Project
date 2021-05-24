@@ -5,16 +5,30 @@
 		<fieldset>
 			<legend>Field Attributes</legend>
 			<ul class="formalList">
-				<li>{{fieldInfo.fCity}} ,{{fieldInfo.fState}}</li>
-				<li>{{fieldInfo.fAcres}} acres of {{fieldInfo.fCrop}} planted on {{fieldInfo.fPDate}}</li>
+				<li>Location: {{fieldInfo.fCity}} ,{{fieldInfo.fState}}</li>
+				<li>Area: {{fieldInfo.fAcres}} acres</li> 
+				<li>Crop: {{fieldInfo.fCrop}}</li>
+				<li>Planting Date: {{fieldInfo.fPDate}}</li>
 				<li>Record created on {{fieldInfo.cDate}} by {{fieldInfo.cUser}}</li>
 			</ul> 
-			<form method="post" class="editField">
+			<form method="post" class="rightForm">
 				<input type="hidden" name="id" value="{{fieldInfo.id}}">
 				<input type="submit" name="editFieldAtt" value="Edit">
 			</form>
 		</fieldset>
 	
+		<fieldset>
+			<legend>Field Ops Notes</legend>
+			<ul class="formalList">
+				<li>Row Spacing: </li>
+				<li>Seed Spacing: </li> 
+				<li>Irrigation Type: </li>
+			</ul> 
+			<form method="post" class="rightForm">
+				<input type="hidden" name="id" value="{{fieldInfo.id}}">
+				<input type="submit" name="editFieldOps" value="Edit">
+			</form>
+		</fieldset>
 
 </div>
 

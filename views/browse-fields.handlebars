@@ -1,6 +1,10 @@
 <h1>Existing Fields</h1>
 
 {{#if fieldInfo}}
+<div class="fieldDetails">
+
+<a href='json/defaultFields.json' download='defaultFields.json' id="dummyDownload" >Download default field list</a>
+
 <ul class="formalList">
 	{{#each fieldInfo}}
 	<h3>{{this.fName}}</h3>
@@ -15,3 +19,5 @@
 	{{/each}}
 </ul>
 {{/if}}
+
+</div>
